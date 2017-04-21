@@ -1,18 +1,31 @@
 * {
-  box-sizing: border-box;
-  font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+    box-sizing: border-box;
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
 }
+
+body,
 html {
-  font-size: 62.5%;
-  background: radial-gradient(ellipse at center, $base 0, $darken 80%, $back 100%);
+    font-size: 1rem;
+    background-size: cover;
 }
+
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
-  color: #444;
-  transition: all .4s .3s ease-in;
+    font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+    color: #444;
+    transition: all .4s .3s ease-in;
 }
-body,html{
-	min-height: 100vh;
-	overflow: hidden;
+
+body,
+html {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+svg {
+    max-width: 100%;
+}
+
+svg#logo {
+    width: 100px;
 }

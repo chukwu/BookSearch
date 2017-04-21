@@ -12,29 +12,126 @@
 
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
     <link href="assets/css/style.min.css" rel="stylesheet">
+    <link href="assets/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <script src="assets/components/modernizr/modernizr.js"></script>
 </head>
 
 <body>
+    <div class="Absolute-Center loader">
+        <div class="sk-folding-cube">
+            <div class="sk-cube1 sk-cube"></div>
+            <div class="sk-cube2 sk-cube"></div>
+            <div class="sk-cube4 sk-cube"></div>
+            <div class="sk-cube3 sk-cube"></div>
+        </div>
+    </div>
+
 
     <header class="header" role="banner">
-        <div class="logo">
-            <a href="/">
-                <img src="assets/img/logo.png" alt="Logo">
-            </a>
-        </div>
-        <nav class="nav" role="navigation">
-            <ul>
-                <li>
-                    <a href="/"></a>
-                </li>
-            </ul>
+        <nav class="navbar navbar-inverse">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Books and Publications <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">One more separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#">Contact Us</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">Another action</a></li>
+                                <li><a href="#">Something else here</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="#">Separated link</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
         </nav>
+
+
     </header>
 
     <main class="main" role="main">
+        <div class="container">
+            <div class="row">
+                <div class="column col-xs-4 col-md-2 col-sm-2">
+                    <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.61 322.61">
+                            <defs>
+                                <style>
+                                #logo .cls-1 {
+                                    fill: #3a3e3d;
+                                }
 
+                                #logo .cls-2 {
+                                    fill: none;
+                                }
+
+                                #logo .cls-3 {
+                                    fill: #fff;
+                                }
+
+                                #logo .cls-4 {
+                                    fill: #da928c;
+                                }
+                                </style>
+                            </defs>
+                            <title>95194-OKEH73-798</title>
+                            <rect class="cls-1" width="322.61" height="322.61"/>
+                            <g>
+                                <ellipse class="cls-2" cx="145.67" cy="229.11" ry="1.58"/>
+                                <path class="cls-3" d="M-344.91,458.08a14,14,0,0,1-14-12.76L-479.58,384a2,2,0,0,1-.88-2.69,2,2,0,0,1,2.69-.88l122.85,62.43v1.23a10,10,0,0,0,10,10,10,10,0,0,0,10-10v-1.23l124-62.43a2,2,0,0,1,2.69.89,2,2,0,0,1-.89,2.69l-121.86,61.35A14,14,0,0,1-344.91,458.08Z" transform="translate(505 -225.39)"/>
+                                <polygon class="cls-4" points="160.58 214.25 159.84 213.64 56.04 128.44 57.52 126.63 160.58 211.23 263.81 126.63 265.28 128.44 160.58 214.25"/>
+                                <path class="cls-4" d="M-344.42,439.29h0a1.17,1.17,0,0,1-1-.52L-416.51,332l1.94-1.29L-344.41,436l70.89-105.35,1.94,1.3-71.86,106.8A1.17,1.17,0,0,1-344.42,439.29Z" transform="translate(505 -225.39)"/>
+                                <path class="cls-4" d="M-344.42,439.29h0a1.17,1.17,0,0,1-1.14-.91l-27.15-122.55,2.28-.51,26,117.5,26.94-117.51,2.28,0.52-28.09,122.55A1.17,1.17,0,0,1-344.42,439.29Z" transform="translate(505 -225.39)"/>
+                            </g>
+                    </svg>
+                </div>
+                <div class="column col-xs-12 col-md-10 col-sm-10">
+                    <div class="loadarea">
+                        <div class="row">
+                            <div class="column col-xs-12 col-md-8 col-sm-8">
+                                <h1>Book List</h1>
+                            </div>
+                            <div class="column col-xs-12 col-md-4 col-sm-4">
+                                <h1>Filter</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <aside class="sidebar" role="complementary">
@@ -46,6 +143,7 @@
     </footer>
 
     <script src="assets/components/jquery/jquery.min.js"></script>
+    <script src="assets/components/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
 
 </body>
