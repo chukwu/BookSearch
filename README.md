@@ -26,6 +26,7 @@ Test project for a job in dubai.
 - JSHint .jshintrc file for configuring JavaScript linting
 - No superfluous code comments
 - SVG - no fallback due to ...
+- Google font - LATO
 
 
 # Description:
