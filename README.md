@@ -13,7 +13,6 @@ Test project for a job in dubai.
 - Baseline HTML5 features, DNS prefetching, responsive meta
 - Encourages one-file CSS/JS in the view (HTML) for performance
 - Includes jQuery CDN and relative fallback
-- Includes Modernizr and HTML5 Shiv
 - Includes normalize.css
 - Open source workflow with Gulpjs running on Node.js
 - Automatic Gulp dependency installation, directory relocation and gulp tasks
