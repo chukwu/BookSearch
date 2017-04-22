@@ -4,7 +4,7 @@
 Test project for a job in dubai.
 
 
-#FEATURES
+# FEATURES
 - HTML5 framework, WAI-ARIA roles and HTML5 semantics
 - Bootstrap for responsiveness
 - GSAP for all CSS 3 animations
@@ -25,6 +25,7 @@ Test project for a job in dubai.
 - Standard .gitignore to ignore minified files and standard ignorables such as .DS_Store
 - JSHint .jshintrc file for configuring JavaScript linting
 - No superfluous code comments
+- SVG - no fallback due to ...
 
 
 # Description:
