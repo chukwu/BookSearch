@@ -12,11 +12,12 @@
 
         //API call and templating using Mustache templating engine and jquery
         function getData(url, templateid) {
+            $('.loader').show();
             $.getJSON(url, data, function(result) {
                 var template = $('#' + templateid).html();
                 Mustache.parse(template); // optional, speeds up future uses
                 $('.resultbox').html('');
-                $('.loader').show();
+
                 if (templateid == 'publications') {
                     $.each(result, function(i, field) {
                         //console.log(field);
@@ -37,15 +38,19 @@
                     });
                 }
 
-                setTimeout(function() { $('.loader').fadeOut(1000); }, 500);
+                $('.loader').fadeOut(500);
 
                 criticclick();
                 data.q = "";
                 data.slug = "";
+
+                goToByScroll('resultbox', '200', 160);
+
+                TweenMax.staggerFrom($('.resultbox > .column'), 2, { opacity: 0, y: 100, delay: 0, ease: Back.easeInOut }, 0.2);
             });
         }
 
-
+        TweenMax.staggerFrom($('.sidecontainer, .filterer > li, .filterergenre > li'), 2, { opacity: 0, y: 20, ease: Power4.easeInOut }, 0.1);
         getData('http://idreambooks.com/api/publications/recent_recos.json', 'publications');
 
         //side panel filterer.
@@ -77,14 +82,32 @@
             $('.criticclick').click(function() {
                 data.q = $(this).data('title');
                 getData('http://idreambooks.com/api/books/reviews.json', 'critics_review');
+                return false;
             });
         }
 
+        $('.searchicon').click(function() {
+            $(this).parent().submit();
+        });
+
+        //when search is triggered
         $('.searchform').submit(function() {
             data.q = $(this).find('.searchtextarea').val();
             getData('http://idreambooks.com/api/publications/recent_recos.json', 'publications');
             return false;
         });
+
+        //scroll to result div
+        function goToByScroll(id, dur, offset) {
+            // Remove "link" from the ID
+            id = id.replace("link", "");
+            // Scroll
+            $('html,body').animate({
+                scrollTop: $("." + id).offset().top - offset
+            }, dur);
+        }
+
+
     });
 
 })(jQuery, window, document);
