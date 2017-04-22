@@ -9,11 +9,11 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
-
+    <link href="assets/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="//ajax.googleapis.com" rel="dns-prefetch">
     <link href="assets/css/style.min.css" rel="stylesheet">
-    <link href="assets/components/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <script src="assets/components/modernizr/modernizr.js"></script>
 </head>
 
@@ -86,7 +86,7 @@
     <main class="main" role="main">
         <div class="container">
             <div class="row">
-                <div class="column col-xs-4 col-md-2 col-sm-2">
+                <div class="column col-xs-4 col-md-1 col-sm-2">
                     <svg id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 322.61 322.61">
                             <defs>
                                 <style>
@@ -118,14 +118,113 @@
                             </g>
                     </svg>
                 </div>
-                <div class="column col-xs-12 col-md-10 col-sm-10">
+                <div class="column col-xs-12 col-md-11 col-sm-10">
                     <div class="loadarea">
                         <div class="row">
                             <div class="column col-xs-12 col-md-8 col-sm-8">
-                                <h1>Book List</h1>
+                                <div class="row">
+                                    <div style="padding: 0;" class="column col-xs-12">
+                                        <div class="searchbox">
+                                            <form class="searchform" action="#">
+                                                <input placeholder="Search for book" class="form-control searchtextarea" type="text">
+
+                                                <svg class="searchicon Absolute-Center" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve">
+                                                <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21  c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279  C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19  S32.459,40,21.983,40z"/>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                <g>
+                                                </g>
+                                                </svg>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="resultbox row">
+
+                                </div>
                             </div>
                             <div class="column col-xs-12 col-md-4 col-sm-4">
-                                <h1>Filter</h1>
+                                <div class="sidecontainer">
+                                    <h3 class="text-uppercase">Filter Book By Category</h3>
+                                    <hr>
+                                    <ul class="filterer">
+                                        <li data-url="http://idreambooks.com/api/publications/recent_recos.json" data-cat="publications" class="active">Critically Acclaimed</li>
+                                        <li data-url="http://idreambooks.com/api/shows/books_featured.json" data-cat="featured_books">Featured in TV Shows</li>
+                                    </ul>
+                                </div>
+                                <p><br/></p>
+                                <div class="sidecontainer">
+                                    <h3 class="text-uppercase">Filter Book By Genre</h3>
+                                    <hr>
+                                    <ul class="filterergenre">
+                                        <li class="active">all-books</li>
+                                        <li>action-adventure</li>
+                                        <li>children-s-books</li>
+                                        <li>crafts-hobbies-home</li>
+                                        <li>bestsellers</li>
+                                        <li>fiction</li>
+                                        <li>non-fiction</li>
+                                        <li>arts-photography</li>
+                                        <li>biographies-memoirs</li>
+                                        <li>business-economics</li>
+                                        <li>comics-graphic-novels</li>
+                                        <li>computers-technology</li>
+                                        <li>cooking</li>
+                                        <li>crafts-hobbies-home</li>
+                                        <li>crime</li>
+                                        <li>current-affairs</li>
+                                        <li>education-reference</li>
+                                        <li>erotica</li>
+                                        <li>gay-lesbian</li>
+                                        <li>health-fitness-dieting</li>
+                                        <li>history</li>
+                                        <li>horror</li>
+                                        <li>humor-entertainment</li>
+                                        <li>law-philosophy</li>
+                                        <li>literature-fiction</li>
+                                        <li>mystery-thriller-suspense</li>
+                                        <li>nature-wildlife</li>
+                                        <li>parenting-relationships</li>
+                                        <li>political-social-sciences</li>
+                                        <li>professional-technical</li>
+                                        <li>religion-spirituality</li>
+                                        <li>romance</li>
+                                        <li>science-math</li>
+                                        <li>science-fiction-fantasy</li>
+                                        <li>self-help</li>
+                                        <li>sports-outdoors</li>
+                                        <li>war</li>
+                                        <li>westerns</li>
+                                        <li>young-adult</li>
+                                        <li>other</li>
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -144,7 +243,100 @@
 
     <script src="assets/components/jquery/jquery.min.js"></script>
     <script src="assets/components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/components/mustache.min.js"></script>
     <script src="assets/js/scripts.min.js"></script>
+
+    <script id="publications" type="x-tmpl-mustache">
+        <div class="column col-xs-12 resultcolumn">
+            <div class="row">
+                <div class="col-xs-12 col-md-2 col-sm-2">
+                    <img class="review_publication_logo img-circle" src="{{review_publication_logo}}" alt="">
+                    <h5 class="text-center">{{review_publication_name}}</h5>
+                    <img class="review_rating_image" src="{{review_rating_image}}" alt="">
+
+                    <a class="btn btn-danger criticclick" data-title="{{title}}" href="#">Critics</a>
+                </div>
+                <div class="col-xs-12 col-md-10 col-sm-10">
+                    <h4><span class="title">{{title}}</span></h4>
+                    <p><b>Author:</b> <span class="author">{{author}}</span></p>
+                    <p><b>Book Link:</b> <a href="{{book_link}}" class="book_link">{{book_link}}</a></p>
+                    <p><b>Review Snippet:</b> <span class="review_snippet text-justify">{{review_snippet}}</span></p>
+                    <p><b>Review Date:</b> <span class="review_date">{{review_date}}</span></p>
+                    <p><b>Review Link:</b> <a href="{{review_link}}" class="review_link">{{review_link}}</a></p>
+                    <p><b>isbns:</b> <span style="word-break: break-all" class="isbns">{{isbns}}</span></p>
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+    <script id="featured_books" type="x-tmpl-mustache">
+        <div class="column col-xs-12 resultcolumn">
+            <div class="row">
+
+                <div class="col-xs-12">
+                    <h4><span class="title">{{title}}</span></h4>
+                    <p><b>Author:</b> <span class="author">{{author}}</span></p>
+                    <p><b>Pub Date:</b> {{pubDate}}</p>
+                    <p><b>Book Link:</b> <a href="{{bookLink}}" class="bookLink">{{bookLink}}</a></p>
+                    <p><b>Shows Count:</b> <span class="showsCount">{{showsCount}} show (s)</span></p>
+
+                    <ul>
+                        {{#shows}}
+                        <li><b>{{showName}}</b> on {{showDate}}</li>
+                        {{/shows}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </script>
+
+
+    <script id="critics_review" type="x-tmpl-mustache">
+        <div class="column col-xs-12 resultcolumn">
+            <div class="row">
+                <div class="col-xs-1 col-md-1 col-sm-1">
+                    <img class="to_read_or_not" src="{{to_read_or_not}}" alt="">
+                </div>
+                <div class="col-xs-11 col-md-11 col-sm-11">
+                    <h4><span class="title">{{title}} - ({{sub_title}})</span></h4>
+                    <p><b>Author:</b> <span class="author">{{author}}</span></p>
+                    <p><b>Review Count:</b> {{review_count}}</p>
+                    <p><b>Rating:</b> {{rating}}</p>
+                    <p><b>Genre:</b> {{genre}}</p>
+                    <p><b>Pages:</b> {{pages}} pages</p>
+                    <p><b>Release Date:</b> {{release_date}}</p>
+
+
+                </div>
+                <div class="col-xs-12">
+                    <div class="sidecontainer">
+                        <ul>
+
+                            {{#critic_reviews}}
+                            <li>
+                                <div class="row">
+                                    <div class="col-xs-12 col-md-2 col-sm-2">
+                                        <img class="smiley_or_sad img-circle" src="{{source_logo}}" alt="">
+                                        <img class="smiley_or_sad" src="{{smiley_or_sad}}" alt="">
+                                    </div>
+                                    <div class="col-xs-12 col-md-10 col-sm-10">
+                                        <p><b>Snippet:</b> {{snippet}}</p>
+                                        <p><b>Source:</b> {{source}}</p>
+                                        <p><b>Review Link:</b> <a href="{{review_link}}" class="bookLink">{{review_link}}</a></p>
+                                        <p><b>Positive or negative:</b> {{pos_or_neg}}</p>
+                                        <p><b>Star Rating:</b> {{star_rating}}</p>
+                                        <p><b>Review Date:</b> {{review_date}}</p>
+                                    </div>
+                                </div>
+                            </li>
+                            {{/critic_reviews}}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </script>
 
 </body>
 

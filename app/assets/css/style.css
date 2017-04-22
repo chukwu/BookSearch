@@ -12,22 +12,31 @@
   font-smoothing: antialiased;
   text-rendering: optimizeLegibility; }
 
+a {
+  cursor: pointer; }
+
 body,
 html {
   font-size: 1rem;
   background-size: cover; }
 
 body {
-  font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+  font: 300 13px/1.6 'Lato';
   color: #444;
   transition: all .4s .3s ease-in; }
 
 body,
 html {
-  min-height: 100vh;
-  overflow: hidden; }
+  min-height: 100vh; }
+  body hr,
+  html hr {
+    border: none;
+    border-top: thin solid #da928c;
+    margin-top: 5px;
+    margin-bottom: 10px; }
 
-svg {
+svg,
+img {
   max-width: 100%; }
 
 svg#logo {
@@ -407,6 +416,94 @@ textarea {
 .nav ul {
   list-style: none; }
 
+.sidecontainer {
+  width: 100%;
+  min-height: 200px;
+  background-color: #eee;
+  padding: 20px 25px; }
+  .sidecontainer h3 {
+    margin-top: 0px;
+    font-size: 1.1em; }
+  .sidecontainer ul {
+    padding-left: 0px;
+    list-style: none; }
+  .sidecontainer ul > li {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.78);
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 500ms linear;
+    cursor: pointer; }
+  .sidecontainer li.active {
+    font-weight: bold;
+    color: #da928c;
+    font-size: 1.1em; }
+  .sidecontainer li.active:before {
+    width: 3px;
+    height: 100%;
+    background-color: #da928c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: ' '; }
+
+.resultcolumn .btn {
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  border-radius: 0px;
+  text-transform: uppercase; }
+
+.resultbox {
+  margin-top: 20px;
+  position: relative; }
+  .resultbox h4 {
+    color: #da928c;
+    text-transform: uppercase; }
+  .resultbox .column {
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #f3f3f3;
+    margin-bottom: 20px; }
+    .resultbox .column p {
+      margin-bottom: 5px; }
+  .resultbox .column b {
+    color: #333;
+    font-weight: bold; }
+  .resultbox img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px; }
+
+.searchbox {
+  width: 100%;
+  padding: 17px 15px;
+  background-color: #eee;
+  position: relative; }
+  .searchbox .searchicon {
+    width: 25px;
+    margin-right: 10px; }
+  .searchbox .searchicon path {
+    fill: #ccc;
+    transition: all 500ms linear; }
+  .searchbox form input {
+    width: 100%;
+    border: none;
+    border-radius: 0px;
+    background-color: transparent;
+    box-shadow: none !important;
+    border-bottom: thin solid #ddd;
+    padding: 0px 20px 0px 0px;
+    font-size: 1.7em;
+    transition: all 500ms linear; }
+  .searchbox form input:focus {
+    border-color: #da928c; }
+  .searchbox form input:focus {
+    border-color: #da928c; }
+    .searchbox form input:focus + .searchicon path {
+      fill: #da928c; }
+
 @keyframes sk-foldCubeAngle {
   0%,
   10% {
@@ -500,7 +597,9 @@ textarea {
 .loader {
   width: 90px;
   height: 81px;
-  z-index: 10; }
+  z-index: 10;
+  display: none;
+  background-color: #ddd; }
 
 .loadarea {
   background: white;

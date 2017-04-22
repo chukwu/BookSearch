@@ -4,6 +4,10 @@
     text-rendering: optimizeLegibility;
 }
 
+a {
+    cursor: pointer;
+}
+
 body,
 html {
     font-size: 1rem;
@@ -11,7 +15,7 @@ html {
 }
 
 body {
-    font: 300 13px/1.6 'Helvetica Neue', Helvetica, Arial;
+    font: 300 13px/1.6 'Lato';
     color: #444;
     transition: all .4s .3s ease-in;
 }
@@ -19,10 +23,16 @@ body {
 body,
 html {
     min-height: 100vh;
-    overflow: hidden;
+    hr {
+        border: none;
+        border-top: thin solid #da928c;
+        margin-top: 5px;
+        margin-bottom: 10px;
+    }
 }
 
-svg {
+svg,
+img {
     max-width: 100%;
 }
 

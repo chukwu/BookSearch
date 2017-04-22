@@ -1,3 +1,107 @@
-.main {
+.sidecontainer {
+    width: 100%;
+    min-height: 200px;
+    background-color: #eee;
+    padding: 20px 25px;
+    h3 {
+        margin-top: 0px;
+        font-size: 1.1em;
+    }
+    ul {
+        padding-left: 0px;
+        list-style: none;
+    }
+    ul>li {
+        padding: 10px 20px;
+        background-color: rgba(255, 255, 255, 0.78);
+        margin-bottom: 10px;
+        position: relative;
+        transition: all 500ms linear;
+        cursor: pointer;
+    }
+    li.active {
+        font-weight: bold;
+        color: $primcolor;
+        font-size: 1.1em;
+    }
+    li.active:before {
+        width: 3px;
+        height: 100%;
+        background-color: $primcolor;
+        position: absolute;
+        top: 0;
+        left: 0;
+        content: ' ';
+    }
+}
 
+.resultcolumn .btn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 30px;
+    border-radius: 0px;
+    text-transform: uppercase;
+}
+
+.resultbox {
+    margin-top: 20px;
+    position: relative;
+    h4 {
+        color: $primcolor;
+        text-transform: uppercase;
+    }
+    .column {
+        position: relative;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: #f3f3f3;
+        margin-bottom: 20px;
+        p {
+            margin-bottom: 5px;
+        }
+    }
+    .column b {
+        color: #333;
+        font-weight: bold;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+}
+
+.searchbox {
+    width: 100%;
+    padding: 17px 15px;
+    background-color: #eee;
+    position: relative;
+    .searchicon {
+        width: 25px;
+        margin-right: 10px;
+    }
+    .searchicon path {
+        fill: #ccc;
+        transition: all 500ms linear;
+    }
+    form input {
+        width: 100%;
+        border: none;
+        border-radius: 0px;
+        background-color: transparent;
+        box-shadow: none !important;
+        border-bottom: thin solid #ddd;
+        padding: 0px 20px 0px 0px;
+        font-size: 1.7em;
+        transition: all 500ms linear;
+    }
+    form input:focus {
+        border-color: $primcolor;
+    }
+    form input:focus {
+        border-color: $primcolor;
+        +.searchicon path {
+            fill: $primcolor;
+        }
+    }
 }
