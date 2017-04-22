@@ -3,7 +3,7 @@
 
 Test project for a job in dubai.
 
-Description:
+# Description:
 
 Build a simple SPA that serves as a directory to browse for books and book reviews.
 
@@ -15,7 +15,7 @@ up on the documentation of the APIs they provide and to generate an API key to u
 
 submission.
 
-Requirements:
+# Requirements:
 
 - Use a style preprocessor
 
