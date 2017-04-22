@@ -3,6 +3,30 @@
 
 Test project for a job in dubai.
 
+
+#FEATURES
+- HTML5 framework, WAI-ARIA roles and HTML5 semantics
+- Bootstrap for responsiveness
+- GSAP for all CSS 3 animations
+- Mustache for templating and data binding
+- Jquery
+- Baseline HTML5 features, DNS prefetching, responsive meta
+- Encourages one-file CSS/JS in the view (HTML) for performance
+- Includes jQuery CDN and relative fallback
+- Includes Modernizr and HTML5 Shiv
+- Includes normalize.css
+- Open source workflow with Gulpjs running on Node.js
+- Automatic Gulp dependency installation, directory relocation and gulp tasks
+- Livereloading the browser and file injection upon changes with BrowserSync
+- Annotated Gulpfile.js for extending
+- Built-in build script for auto-minification of CSS and JavaScript files for production
+- Pre-setup Sass/SCSS files and folders for baseline project structure and imports
+- Includes .editorconfig for consistent coding styles in IDEs
+- Standard .gitignore to ignore minified files and standard ignorables such as .DS_Store
+- JSHint .jshintrc file for configuring JavaScript linting
+- No superfluous code comments
+
+
 # Description:
 
 Build a simple SPA that serves as a directory to browse for books and book reviews.
