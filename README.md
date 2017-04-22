@@ -3,6 +3,48 @@
 
 Test project for a job in dubai.
 
+Description:
+
+Build a simple SPA that serves as a directory to browse for books and book reviews.
+
+See http://idreambooks.com/ as an example - we want the same thing but with your own styles,
+
+filters, search, and implemented using the rest APIs. Go to http://idreambooks.com/api to read
+
+up on the documentation of the APIs they provide and to generate an API key to use in your
+
+submission.
+
+Requirements:
+
+- Use a style preprocessor
+
+- Use bootstrap for responsive support
+
+- Modularized approach, clean and commented code on all fronts (HTML, CSS & JS)
+
+- Simple and intuitive navigation, search and filtering based on the data available from the APIs
+
+- Animated transitions
+
+- Must use GIT for version control
+
+- Must not use an SPA framework, like AngularJS
+
+The completed assignment should be hosted on a public URL (of your choosing) that we can
+
+view.
+
+Feel free to use any plugins, or any additional resources you use to achieve this are completely
+
+up to you, as long as you can provide an explanation why you chose them.
+
+Deliverables:
+
+- Public link for the project
+
+- GitHub link for the project
+
 
 
 ## License
